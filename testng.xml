@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="resources.Listners" />
+		<listener class-name="resources.ExtentReporterNG"></listener>
+	</listeners>
+
+
+	<test thread-count="5" name="Lead Creation and Conversion">
+		<classes>
+			<class name="automatedTests.Login" />
+			<class name="automatedTests.LeadCreationAndConversion" />
+		</classes>
+	</test>
+
+
+
+	<test thread-count="5" name="Account Creation">
+		<classes>
+			<class name="automatedTests.Login" />
+			<class name="automatedTests.AccountCreation" />
+		</classes>
+	</test>
+
+
+	<test thread-count="5" name="Opportunity Creation">
+		<classes>
+			<class name="automatedTests.Login" />
+			<class name="automatedTests.OpportunityCreation" />
+		</classes>
+	</test>
+
+
+</suite>
